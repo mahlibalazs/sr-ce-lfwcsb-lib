@@ -1,4 +1,4 @@
-public class Match {
+class Match {
     private final String homeTeam;
     private int homeScore;
     private final String awayTeam;
