@@ -32,10 +32,16 @@ public class Match {
     }
 
     public void setHomeScore(int homeScore) {
+        if (homeScore < 0) {
+            throw new IllegalArgumentException("Home score cannot be negative");
+        }
         this.homeScore = homeScore;
     }
 
     public void setAwayScore(int awayScore) {
+        if (awayScore < 0) {
+            throw new IllegalArgumentException("Away score cannot be negative");
+        }
         this.awayScore = awayScore;
     }
 
